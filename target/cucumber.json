@@ -1,0 +1,66 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-08-13T05:50:48.482Z",
+        "line": 5,
+        "name": "amazon-search",
+        "description": "",
+        "id": ";amazon-search",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6816000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User is on the google search page",
+            "match": {
+              "location": "com.google.stepdefinition.amazonsearch.user_is_on_the_google_search_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3057000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user write amazon on search box",
+            "match": {
+              "location": "com.google.stepdefinition.amazonsearch.user_write_amazon_on_search_box()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "org.junit.ComparisonFailure: expected:\u003cAmazon[.com: Online Shopping for Electronics, Apparel, Computers, Books, DVDs \u0026 more]\u003e but was:\u003cAmazon[]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:115)\r\n\tat org.junit.Assert.assertEquals(Assert.java:144)\r\n\tat com.google.stepdefinition.amazonsearch.user_should_go_to_amazon_page(amazonsearch.java:41)\r\n\tat ✽.user should go to amazon page(file:///C:/Users/HACI%20UZDIL/IdeaProjects/googleParalel/src/test/resources/features/amazonsearch.feature:8)\r\n",
+              "duration": 71000000,
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "user should go to amazon page",
+            "match": {
+              "location": "com.google.stepdefinition.amazonsearch.user_should_go_to_amazon_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@googleamazon"
+          }
+        ]
+      }
+    ],
+    "name": "",
+    "description": "  As a user go to google page and search amazon",
+    "id": "",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/amazonsearch.feature",
+    "tags": []
+  }
+]
