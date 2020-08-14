@@ -1,10 +1,82 @@
 [
   {
-    "line": 1,
+    "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-08-13T05:50:48.482Z",
-        "line": 5,
+        "start_timestamp": "2020-08-14T00:50:34.490Z",
+        "line": 6,
+        "name": "Apple-search",
+        "description": "",
+        "id": ";apple-search",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5728000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User is on the search page",
+            "match": {
+              "location": "com.google.stepdefinition.appleSearch.user_is_on_the_search_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3406000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user write apple on search box",
+            "match": {
+              "location": "com.google.stepdefinition.appleSearch.user_write_apple_on_search_box()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 10000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user should go to apple page",
+            "match": {
+              "location": "com.google.stepdefinition.appleSearch.user_should_go_to_apple_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          }
+        ]
+      }
+    ],
+    "name": "",
+    "description": "  As a user go to google page and search apple",
+    "id": "",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Search.feature",
+    "tags": [
+      {
+        "name": "@smoke",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2020-08-14T00:50:43.732Z",
+        "line": 6,
         "name": "amazon-search",
         "description": "",
         "id": ";amazon-search",
@@ -13,10 +85,10 @@
         "steps": [
           {
             "result": {
-              "duration": 6816000000,
+              "duration": 941000000,
               "status": "passed"
             },
-            "line": 6,
+            "line": 7,
             "name": "User is on the google search page",
             "match": {
               "location": "com.google.stepdefinition.amazonsearch.user_is_on_the_google_search_page()"
@@ -25,10 +97,10 @@
           },
           {
             "result": {
-              "duration": 3057000000,
+              "duration": 3346000000,
               "status": "passed"
             },
-            "line": 7,
+            "line": 8,
             "name": "user write amazon on search box",
             "match": {
               "location": "com.google.stepdefinition.amazonsearch.user_write_amazon_on_search_box()"
@@ -37,11 +109,10 @@
           },
           {
             "result": {
-              "error_message": "org.junit.ComparisonFailure: expected:\u003cAmazon[.com: Online Shopping for Electronics, Apparel, Computers, Books, DVDs \u0026 more]\u003e but was:\u003cAmazon[]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:115)\r\n\tat org.junit.Assert.assertEquals(Assert.java:144)\r\n\tat com.google.stepdefinition.amazonsearch.user_should_go_to_amazon_page(amazonsearch.java:41)\r\n\tat ✽.user should go to amazon page(file:///C:/Users/HACI%20UZDIL/IdeaProjects/googleParalel/src/test/resources/features/amazonsearch.feature:8)\r\n",
-              "duration": 71000000,
-              "status": "failed"
+              "duration": 364000000,
+              "status": "passed"
             },
-            "line": 8,
+            "line": 9,
             "name": "user should go to amazon page",
             "match": {
               "location": "com.google.stepdefinition.amazonsearch.user_should_go_to_amazon_page()"
@@ -51,7 +122,7 @@
         ],
         "tags": [
           {
-            "name": "@googleamazon"
+            "name": "@smoke"
           }
         ]
       }
@@ -61,6 +132,15 @@
     "id": "",
     "keyword": "Feature",
     "uri": "file:src/test/resources/features/amazonsearch.feature",
-    "tags": []
+    "tags": [
+      {
+        "name": "@smoke",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
   }
 ]

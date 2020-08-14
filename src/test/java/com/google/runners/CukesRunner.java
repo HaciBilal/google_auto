@@ -19,7 +19,7 @@ import org.junit.runner.RunWith;
 
 
         //tags = "@googleapple"
-            tags = "@googleamazon"
+            tags = "@smoke"
 
 
 )
